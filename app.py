@@ -11,7 +11,29 @@ define("port", default=8000, help="run on the given port", type=int)
  
 class IndexHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render('index.html')
+        self.render('main.html')
+
+class CantactHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('cantact.html')
+
+class UsHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('us.html')
+
+class FirstHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('first.html')
+
+class SecondHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('second.html')
+
+class ThirdHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('third.html')
+
+
  
 class MungedPageHandler(tornado.web.RequestHandler):
     def map_by_first_letter(self, text):
@@ -33,7 +55,15 @@ class MungedPageHandler(tornado.web.RequestHandler):
 if __name__ == '__main__':
     tornado.options.parse_command_line()
     app = tornado.web.Application(
-        handlers=[(r'/', IndexHandler), (r'/poem', MungedPageHandler)],
+        handlers=[
+            (r'/', IndexHandler,{},'index'),
+            (r'/poem', MungedPageHandler),
+            (r'/first',FirstHandler,{},'first'),
+            (r'/second',SecondHandler,{},'second'),
+            (r'/third',ThirdHandler,{},'third'),
+            (r'/cantact',CantactHandler,{},'cantact'),
+            (r'/us',UsHandler,{},'us'),
+            ],
         template_path=os.path.join(os.path.dirname(__file__), "templates"),
         static_path=os.path.join(os.path.dirname(__file__), "static"),
         debug=True
