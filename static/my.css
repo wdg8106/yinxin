@@ -30,6 +30,8 @@
 
 .woody_h2{
 	line-height: 40px;
+	color: #ff8258;
+	/*text-align: center;*/
 }
 
 .woody_p{
@@ -45,9 +47,26 @@
 	letter-spacing: 0.1em;
 	font-family: Microsoft YaHei;
 }
+.woody_p_list{
+	line-height: 35px;
+	text-indent: 4em;
+	letter-spacing: 0.1em;
+	font-family: Microsoft YaHei;
+}
 .woody_h22{
 	line-height: 40px;
 	letter-spacing: 0.2em;
+	color: #ff8258;
 	
 
+}
+.woody_span{
+	line-height: 40px;
+	letter-spacing: 0.2em;
+	color: #ff8258;
+	font-weight: bolder;
+
+}
+.pic_div{
+	  margin-left: 60px;
 }

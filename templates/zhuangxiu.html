@@ -1,7 +1,9 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US"><!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -12,19 +14,6 @@
 <link rel="stylesheet" href="{{ static_url("subscriptions.css") }}">
 <link rel="stylesheet" href="{{ static_url("edd.min.css")}}">
 <link rel="stylesheet" href="{{ static_url("widgets.css")}}">
-
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
-<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
-<title>百度地图API自定义地图</title>
-<!--引用百度地图API-->
-<style type="text/css">
-    html,body{margin:0;padding:0;}
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
-    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-</style>
-<script type="text/javascript" src = "http://code.jquery.com/jquery-2.1.4.min.js"> </script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 
 <!-- <script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
 <script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
@@ -57,7 +46,8 @@
                 <div class="visible-xs">           
                 </div>
             </div>
-                <div class="collapse navbar-collapse menu-above">
+
+          <div class="collapse navbar-collapse menu-above">
                 <div class="menu-header-container">
                     <ul id="menu-top-menu" class="nav navbar-nav menu">
                          <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
@@ -103,28 +93,44 @@
 
 
 <div class='span3 woody_left'>
-   
     <ul class="nav nav-tabs nav-stacked">
-  <li><a href="{{reverse_url('us')}}">企业简介</a></li>
-
-  <li><a href="{{reverse_url('cantact')}}">联系我们</a></li>
+  <li><a href="{{reverse_url('first')}}"  >咨询业务</a></li>
+  <li><a href="{{reverse_url('second')}}"  >代理业务</a></li>
+  <li><a href="{{reverse_url('third')}}"  >小额信贷</a></li>
+  <li><a href="{{reverse_url('zhuangxiu')}}">装修贷</a></li>
 </ul>   
+
   </div>
-  
   
 
     <div id='content' class='woody_main'>
-    <h2 class = "woody_h22">期待您的咨询</h2>
-    <p class = "woody_p_list">地址：湖北省武汉市中北路资本大厦0705室</p>
-    <p class = "woody_p_list">电话：027-87717705</p>
-            <div style="width:80%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+  <div class='span9 main'>
+  <h2 class = 'woody_h2'>装修贷</h2>
+  <p class = 'woody_p'> <span class = "woody_span">产品额度 :</span> 1至20万</p> 
+  <p class="woody_p">  <span class = "woody_span"> 还款期限：</span>12、24、36个月</p>
+  <p class="woody_p"> <span class = "woody_span">产品定价：</span>月贷款利率 0.75% ,月管理费率0.3%</p>
+  <p class="woody_p"><span class = "woody_span">贷款手续费：</span>贷款审批通过后、在发放前，银信泰金融服务公司按贷款金额2%向客户一次性收取服务费。</p>
+
+<p class = 'woody_p'><span class = "woody_span">支付方式：</span>贷款由客户受托支付。即我公司直接将贷款资金转账至雅庭装饰总部指定对公账户上。</p>
+<p class = 'woody_p'><span class = "woody_span">申请条件：</span></p>
+<p class = 'woody_p_list'>1、具有完全民事行为能力的中国公民，并持有第二代身份证。 </p>
+<p class = 'woody_p_list'>2、借款人的工作关系、户籍、房产之一，必须在我公司指定区域内。</p>
+<p class = 'woody_p_list'>3、借款人的信用记录良好。</p>
+<p class = 'woody_p_list'>4、年龄在18周岁(含)至55周岁(含)</p>
+<p class = 'woody_p_list'>5、工薪族工作3年以上；企业主本行业从业经历5年以上, 现经营场所经营满1年, 营业执照注册满2年;</p>
+<p class = 'woody_p_list'>6、最低月收入3000元</p>
+<p class = 'woody_p'><span class = "woody_span">资料清单：</span></p>
+<div class="pic_div" ><img src="{{static_url('qingdan.jpg')}}"> </div>
+
+  </div>
   </div>
 
 
 
-	<div style="display:none">
-	</div>
-    </body>
+    <div style="display:none">
+    </div>
 
-<script type="text/javascript" src="{{ static_url("map.js")}}"></script>
+    
+
+    </body>
 </html>

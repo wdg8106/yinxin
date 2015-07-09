@@ -33,6 +33,10 @@ class ThirdHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('third.html')
 
+class ZhuangxiuHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('zhuangxiu.html')
+
 
  
 class MungedPageHandler(tornado.web.RequestHandler):
@@ -61,6 +65,7 @@ if __name__ == '__main__':
             (r'/first',FirstHandler,{},'first'),
             (r'/second',SecondHandler,{},'second'),
             (r'/third',ThirdHandler,{},'third'),
+            (r'/zhuangxiu',ZhuangxiuHandler,{},'zhuangxiu'),
             (r'/cantact',CantactHandler,{},'cantact'),
             (r'/us',UsHandler,{},'us'),
             ],
