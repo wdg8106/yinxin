@@ -1,6 +1,7 @@
 .woody_main{
-	width:60%;
+	width:70%;
 	float: left;
+	height: 1500px;
 
 	margin-left: 5%;
 	margin-top: 5%;
@@ -69,4 +70,8 @@
 }
 .pic_div{
 	  margin-left: 60px;
+}
+
+.ditu{
+	width: 90%;
 }

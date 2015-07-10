@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="{{ static_url("subscriptions.css") }}">
 <link rel="stylesheet" href="{{ static_url("edd.min.css")}}">
 <link rel="stylesheet" href="{{ static_url("widgets.css")}}">
+<script type="text/javascript" src="{{static_url('jquery.js')}}"></script>
+<script type="text/javascript" src="{{static_url("theme.js")}}"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
@@ -117,14 +119,14 @@
     <h2 class = "woody_h22">期待您的咨询</h2>
     <p class = "woody_p_list">地址：湖北省武汉市中北路资本大厦0705室</p>
     <p class = "woody_p_list">电话：027-87717705</p>
-            <div style="width:80%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+  <!--           <div style="width:80%;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
   </div>
+ -->
+ <div  class = "ditu">
+ <iframe width='1000' height='600' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://amap.com/06Fx5K'></iframe>
 
-
-
+</div>
 	<div style="display:none">
 	</div>
     </body>
-
-<script type="text/javascript" src="{{ static_url("map.js")}}"></script>
 </html>

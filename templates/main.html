@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 8 ]>
 <html id="ie8" lang="en-US">
@@ -18,17 +17,17 @@
 <link rel='stylesheet' id='jetpack-widgets-css'  href='http://leantheme.co/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
 <!-- <link rel='stylesheet' id='theme-css'  href='http://leantheme.co/wp-content/themes/lean/style.css?ver=2.0.0' type='text/css' media='all' /> -->
 <link rel="stylesheet" href="{{ static_url("style.css") }}">
-
-<script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery.js?ver=1.11.0'></script>
+<script type="text/javascript" src="{{static_url('jquery.js')}}"></script>
 <script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","position_in_cart":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","ajax_loader":"http:\/\/leantheme.co\/wp-content\/plugins\/easy-digital-downloads\/assets\/images\/loading.gif","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"0","checkout_page":"http:\/\/leantheme.co\/checkout\/","permalinks":"1"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='http://leantheme.co/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=1.9.10'></script>
-<script type='text/javascript' src='http://leantheme.co/wp-content/themes/lean/js/theme.main.min.js?ver=2.0.0'></script>
-<script type='text/javascript' src='http://leantheme.co/wp-content/themes/lean/js/md5.min.js?ver=2.0.0'></script>
+<script type="text/javascript" src="{{static_url("theme.js")}}"></script>
+<!-- <script type='text/javascript' src='http://leantheme.co/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=1.9.10'></script> -->
+<!-- <script type='text/javascript' src='http://leantheme.co/wp-content/themes/lean/js/theme.main.min.js?ver=2.0.0'></script> -->
+<!-- <script type='text/javascript' src='http://leantheme.co/wp-content/themes/lean/js/md5.min.js?ver=2.0.0'></script> -->
 
 </head>
 <body class="home page page-id-1064 page-template page-template-template-carousel-php">
@@ -134,7 +133,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img width="1920" height="700" src="http://leantheme.co/wp-content/uploads/2014/03/for-bloggers for-bloggers.jpg" class="attachment-full wp-post-image" alt="for-bloggers for-bloggers" />
+                <img width="1920" height="700" src="{{ static_url('one.png') }} " class="attachment-full wp-post-image" alt="for-bloggers for-bloggers" />
 
                 <div class="carousel-caption">
                     <h3>咨询业务</h3>
@@ -142,14 +141,14 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
                 </div>
             </div>
             <div class="item">
-            <img width="1920" height="700" src="http://leantheme.co/wp-content/uploads/2014/03/for-designers.jpg" class="attachment-full wp-post-image" alt="for-designers" />
+            <img width="1920" height="700" src="{{ static_url('two.jpg') }}" class="attachment-full wp-post-image" alt="for-designers" />
                 <div class="carousel-caption">
                     <h3>代理业务</h3>
                         <!-- <p>Built with Bootstrap SASS</p> -->
                 </div>
             </div>
             <div class="item">
-                <img width="1920" height="700" src="http://leantheme.co/wp-content/uploads/2014/03/for-developers.jpg" class="attachment-full wp-post-image" alt="for-developers" />
+                <img width="1920" height="700" src="{{ static_url('four.jpg') }}" class="attachment-full wp-post-image" alt="for-developers" />
                     <div class="carousel-caption">
                         <h3>小额信贷</h3>
                             <!-- <p>Grunt, Bower and Jekyll</p> -->
