@@ -87,3 +87,18 @@ width: 70%;
 	margin-top: 5%;
 	text-align: center;
 }
+
+.woody_header{
+	height: 85px;
+	width: 100%;
+	text-align: center;
+}
+
+.woody_img{
+	height: 100%;
+	width: 100%;
+}
+.woody_img_div{
+	height:85px;
+	width:375px;
+}

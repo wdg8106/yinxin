@@ -42,22 +42,31 @@ class ApplyHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('apply.html')
     def post(self):
-        product = self.get_argument('product')
-        name = self.get_argument('name')
-        phone = self.get_argument('phone')
-        print(type(product),type(name),type(phone))
-        if isinstance(product,unicode):
-            product = product.encode('utf-8')
-        if isinstance(name,unicode):
-            name = name.encode('utf-8')
-        if isinstance(phone,unicode):
-            phone = phone.encode('utf-8')
+        product = self.make_code(self.get_argument('product'))
+        name = self.make_code( self.get_argument('name'))
+        phone = self.make_code(self.get_argument('phone'))
+        price = self.make_code(self.get_argument('price'))
+        expire = self.make_code(self.get_argument('expire'))
+        # print(type(product),type(name),type(phone))
+        # if isinstance(product,unicode):
+        #     product = product.encode('utf-8')
+        # if isinstance(name,unicode):
+        #     name = name.encode('utf-8')
+        # if isinstance(phone,unicode):
+        #     phone = phone.encode('utf-8')
+
         # database.execute('insert into apply()')
-        history = "%s\t%s\t%s\n" %(name,phone,product)
+        history = "%s\t%s\t%s\t%s\t%s\n" %(name,phone,product,price,expire)
         f = open('apply.txt','a')
         f.write(history)
         f.close()
         return self.render('success.html')
+
+    def make_code(self,string):
+        if isinstance(string,unicode):
+            string = string.encode('utf-8')
+        return string
+
 
 
 

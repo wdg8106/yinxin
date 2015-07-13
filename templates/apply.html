@@ -112,20 +112,36 @@
          选择产品：
          <br/>
         <select name="products" id = 'set' class = 'woody_input' onchange = 'setvalue(this.id)'>
-<option value="1">装修贷</option>
-<option value="2">首付贷</option>
-<option value="3" selected="selected">车位贷</option>
-</select>
+            <option value="1">装修贷</option>
+            <option value="2">首付贷</option>
+            <option value="3" selected="selected">车位贷</option>
+        </select>
 
          <form name='input' action='/apply' method='post'>  
         
-        <input type="text" id='get'  name = 'product' style="display:none;" / >
+        <input type="text" id='get'  name = 'product' value="装修贷" style="display:none;" / >
         <br/>
+        期限：
+        <br/>
+        <select name="expires" id = 'set2' class = 'woody_input' onchange = 'setvalues(this.id)'>
+            <option value="1">12个月</option>
+            <option value="2">24个月</option>
+            <option value="3" selected="selected">36个月</option>
+        </select>
+        <br/>
+        <input type="text" name = 'expire' value="12个月" id = 'get2' style="display:none;"  />
+       <br/>
+        金额（单位:万）:
+        <br/>
+        <input type="text" name="price"  class="woody_input"/ placeholder = '请输入金额1~20'>
+        
+         <br/>
         姓名：
         <input type='text' name='name' class = 'woody_input'/>  
         <br/>
         电话：
         <input type='text' name='phone' class = 'woody_input'/>
+
         <input type='submit' value='提交'/>  
         </form>
   </div>
@@ -138,8 +154,17 @@
                 document.getElementById('get').value = obj[i].text;
             }
         }
-
     }
+
+     function setvalues(x){
+        var obj = document.getElementById(x);
+         for( var i = 0 ; i < obj.length ; i++)
+        {
+            if(obj[i].selected){
+                document.getElementById('get2').value = obj[i].text;
+            }
+    }
+}
 </script>
 
 
