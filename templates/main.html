@@ -32,12 +32,24 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
 </head>
 <body class="home page page-id-1064 page-template page-template-template-carousel-php">
 
-<!-- <div  class = 'woody_header'>
-<div style="height:85px;width:300px;text-align: center;"><img src="{{static_url('logo.png')}} " class="woody_img" /> </div>
-    
+<div  class = 'woody_header'>
+<table class="woody_table" style="margin-bottom: 0px;">
+<td style="width:70%;boder:0px;">
+<div style="display:block;"><img src="{{static_url('logo.png')}} " width="336px" height="75px" /> </div>
+</td>
+<td style="boder:0px; width:20%;text-align:center;vertical-align: middle;"; >
+
+<div  style="">服务热线：<span style = "font-size: 14px;
+  font-family: Microsoft YaHei;"> 400-8699-906</span></div>
+</td>
+<td style="boder:0px;width:10%;vertical-align: middle;">
+<div style="vertical-align: middle;"> <img src=" {{static_url("wx.png")}}"  style="height:50px;"  /> </div>
+
+</td>
+  </table>  
 </div>
 
- -->
+
 
     <nav class="menu-above-header menu-navigation navbar-static-top navbar navbar-default navbar-inverse" role="navigation">
         <div class="container">
@@ -153,7 +165,7 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
         </ol>
         <div class="carousel-inner">
             <div class="item active">
-                <img width="1920" height="700" src="{{ static_url('one.png') }} " class="attachment-full wp-post-image" alt="for-bloggers for-bloggers" />
+                <a href="{{reverse_url('first')}}"> <img width="1920" height="700" src="{{ static_url('one.png') }} " class="attachment-full wp-post-image" alt="for-bloggers for-bloggers" /></a>
 
                 <div class="carousel-caption">
                     <h3>咨询业务</h3>
@@ -161,14 +173,14 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
                 </div>
             </div>
             <div class="item">
-            <img width="1920" height="700" src="{{ static_url('two.jpg') }}" class="attachment-full wp-post-image" alt="for-designers" />
+            <a href="{{reverse_url('second')}}"> <img width="1920" height="700" src="{{ static_url('two.jpg') }}" class="attachment-full wp-post-image" alt="for-designers" /></a>
                 <div class="carousel-caption">
                     <h3>代理业务</h3>
                         <!-- <p>Built with Bootstrap SASS</p> -->
                 </div>
             </div>
             <div class="item">
-                <img width="1920" height="700" src="{{ static_url('four.jpg') }}" class="attachment-full wp-post-image" alt="for-developers" />
+               <a href="{{reverse_url('third')}}"> <img width="1920" height="700" src="{{ static_url('four.jpg') }}" class="attachment-full wp-post-image" alt="for-developers" /></a>
                     <div class="carousel-caption">
                         <h3>小额信贷</h3>
                             <!-- <p>Grunt, Bower and Jekyll</p> -->
@@ -244,24 +256,26 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
         </div><!-- /container -->
     </div> <!-- /#wrapper -->
 
-    <div style="height:150px;"></div>
-
-<footer>
-
-             
-    <nav id="footer-menu" class="menu-navigation navbar-fixed-bottom navbar navbar-default navbar-inverse" role="navigation">
-        <div class="container">
-
-                
-                                <p class="navbar-text navbar-right ">
-                                                                                                                         &copy; 2015 银信泰金融                                       
-                </p>
-        </div><!-- /.container -->
-    </nav> 
-
-</footer>
-
-
+   <div style="height:50px;"></div>
+ <div style="  width:100%;
+    height:80px; padding: 24px 0;color: #f1f1f1;text-align: center;background-color: #b8b9b9;font-size: 14px;" >
+        <ul class = "links"  style="">
+             <li class = "links_item"  style=" display: inline-block;
+  vertical-align: middle;
+  padding: 0 1em;
+  line-height: 1em;
+  border-left: 1px solid #d9dadc;
+  ">
+  银信泰金融服务有限公司 </li>
+             <li class="links_item" style="display: inline-block;
+  vertical-align: middle;
+  padding: 0 1em;
+  line-height: 1em;
+  border-left: 1px solid #d9dadc;
+             ">
+             Copyright © 2014-2015  All Rights Reserved.</li>
+        </ul>
+    </div>
 
 
 <!-- <script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201527'></script> -->

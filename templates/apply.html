@@ -3,7 +3,7 @@
 <!--[if IE 8 ]>
 <html id="ie8" lang="en-US">
 <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class = "html"><!--<![endif]-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -32,8 +32,8 @@
 <link rel='shortlink' href='http://wp.me/P4arsQ-ha' /> -->
 
 </head>
-<body class="home page page-id-1064 page-template page-template-template-carousel-php">
-
+<body class="home page page-id-1064 page-template page-template-template-carousel-php body">
+          
 
 
     <nav class="menu-above-header menu-navigation navbar-static-top navbar navbar-default navbar-inverse" role="navigation">
@@ -94,32 +94,23 @@
     </nav> <!-- /#menu-under-header -->
 
 
-<div class='span3 woody_left'>
-    <ul class="nav nav-tabs nav-stacked">
-  <li><a href="{{reverse_url('first')}}"  >咨询业务</a></li>
-  <li><a href="{{reverse_url('second')}}"  >代理业务</a></li>
-  <li><a href="{{reverse_url('third')}}"  >小额信贷</a></li>
-  <li><a href="{{reverse_url('zhuangxiu')}}">装修贷</a></li>
-</ul>   
 
-  </div>
-  
+  <div class = "main">
 
-
-  
-
-    <div id='content' class='woody_main'>
-         选择产品：
+    <div id='content' class='apply_main'>
+        
+    <div class="woody_form_div">
+         <form name='input' action='/apply' method='post' class = 'woody_form'> 
+          选择产品：
          <br/>
         <select name="products" id = 'set' class = 'woody_input' onchange = 'setvalue(this.id)'>
             <option value="1">装修贷</option>
             <option value="2">首付贷</option>
             <option value="3" selected="selected">车位贷</option>
-        </select>
-
-         <form name='input' action='/apply' method='post'>  
+        </select> 
         
         <input type="text" id='get'  name = 'product' value="装修贷" style="display:none;" / >
+        <br/>
         <br/>
         期限：
         <br/>
@@ -141,9 +132,12 @@
         <br/>
         电话：
         <input type='text' name='phone' class = 'woody_input'/>
-
-        <input type='submit' value='提交'/>  
+      
+        <br/>
+        <br/>
+        <input  class = 'woody_input' type='submit' value='提交'/>  
         </form>
+        </div>
   </div>
 <script type="text/javascript">
     function setvalue(x){
@@ -166,10 +160,21 @@
     }
 }
 </script>
-
-
-    <div style="display:none">
+ <div style="display:none">
     </div>
+     <div class="foot" id = "footer" >
+        <ul class = "links">
+           
+           
+             <li class = "links_item">银信泰金融服务有限公司 </li>
+             <li class="links_item">Copyright © 2014-2015  All Rights Reserved.</li>
+        </ul>
+    </div>
+
+</div>
+
+
+   
     
 
     </body>
