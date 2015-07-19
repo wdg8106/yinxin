@@ -36,87 +36,44 @@
 
 
 
-    <nav class="menu-above-header menu-navigation navbar-static-top navbar navbar-default navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".menu-above">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="visible-xs">           
-                </div>
-            </div>
-
-             <div class="collapse navbar-collapse menu-above">
-                <div class="menu-header-container">
-                    <ul id="menu-top-menu" class="nav navbar-nav menu">
-                         <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
-                            <a href="{{reverse_url('index')}}" title="Home"  >首页</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="{{reverse_url('us')}}" title="Demo"  >关于我们</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="{{reverse_url('first')}}"  >产品与解决方案</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                           <a href=" {{reverse_url('apply')}} " title="Documentation"  >在线申请</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="hidden-xs">
-                    <ul class="nav navbar-nav navbar-right nav-pills clearfix">
-                        <li>
-                            <!-- <a href="http://twitter.com/jason_bradley" class="fademe" target="_blank"><span class="fa fa-twitter"></span></a> -->
-                            <!-- <p>电话：027-87717705 (传真)</p> -->
-                        </li>
-                       <!--  <li>
-                            <a href="http://facebook.com/bradley.jason" class="fademe" target="_blank"><span class="fa fa-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="http://github.com/jbrad" class="fademe" target="_blank"><span class="fa fa-github"></span></a>
-                        </li>
-                        <li>
-                            <a href="mailto:jason.bradley@me.com" class="fademe" target="_blank"><span class="fa fa-envelope"></span></a>
-                        </li>
-                        <li>
-                            <a href="http://leantheme.co/feed/" class="fademe" target="_blank"><span class="fa fa-rss"></span></a>
-                        </li> -->
-                    </ul>                                    
-                </div>
-
-            </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-        </div><!-- ./navbar-inner -->
-    </nav> <!-- /#menu-under-header -->
+<div   style="height:60px;width:970px;margin:0 auto;">
+        <span  class="pull-left logo"> 银信泰金融服务有限公司 </span> 
+        <span style="font-size: 12px; font-family: Microsoft YaHei;margin-top: 25px;color:#666;margin-left:10px" class="pull-left">服务热线：400-8699-906</span>
+        <div style="width:50px;height:50px;margin-top: 8px;margin-left:10px" class="pull-left">
+            <img src="{{static_url("wx.png")}} "  style="width:36px;margin-top:5px">
+        </div>
+            <ul id="menu-top-menu" class="nav navbar-nav menu pull-right">
+                 <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active">
+                    <a href="{{reverse_url('index')}}" title="Home"  >首页</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="{{reverse_url('us')}}" title="Demo"  >关于我们</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="{{reverse_url('first')}}"  >产品与解决方案</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                     <a href=" {{reverse_url('apply')}} " title="Documentation"  >在线申请</a>
+                </li>
+            </ul>   
+</div>
+<hr style="border: 0;border-top: 1px solid #eee;margin-top: 0px;margin-bottom: 0px;" >
+<div style="clear:both;"></div>
 
 
 
   
-<div class='span3 woody_left'>
-    <ul class="nav nav-tabs nav-stacked">
-  <li><a href="{{reverse_url('first')}}"  >咨询业务</a></li>
-  <li><a href="{{reverse_url('second')}}"  >代理业务</a></li>
-  <li><a href="{{reverse_url('third')}}"  >小额信贷</a></li>
-  <li><a href="{{reverse_url('zhuangxiu')}}">装修贷</a></li>
-</ul>   
-
-  </div>
-  
 
 
+ <div class="main">
     <div id='content' class='woody_main'>
     <p  class = 'woody_success'>恭喜您，提交成功!</p>
   </div>
+  </div>
 
 
 
-    <div style="display:none">
-    </div>
-    
+
 
     </body>
 </html>

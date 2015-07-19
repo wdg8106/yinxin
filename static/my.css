@@ -4,7 +4,7 @@
 	height: 1500px;
 
 	margin-left: 5%;
-	margin-top: 6%;
+	margin-top: 1%;
 
 }
 
@@ -22,7 +22,7 @@
 }
 
 .woody_left{
-	margin-top: 5%;
+	/*margin-top: 5%;*/
 	width: 10%;
 	float: left;
 	margin-left: 5%;
@@ -123,7 +123,7 @@ padding: 3px;
     }
     .header{
           /*padding: 24px 0;*/
-        /*  height*/: 70px;
+      
           /*color: #f1f1f1;*/
          /* text-align: center;
           vertical-align: middle;
