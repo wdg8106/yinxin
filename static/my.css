@@ -220,3 +220,11 @@ padding: 3px;
     	display: list-item;
  		 text-align: -webkit-match-parent;
     }
+
+    .woody_wrapper{
+        width: 100%;
+    }
+    .woody_widget{
+        width: 30%;
+        float: left;
+    }
