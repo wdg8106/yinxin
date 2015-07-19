@@ -99,8 +99,8 @@ padding: 3px;
   height: 85px;
   line-height: 75px;
   margin: 0 auto;
-  /*min-width: 1000px;*/
-  position: absolute;
+  min-width: 1000px;
+  /*position: absolute;*/
  
 }
 
