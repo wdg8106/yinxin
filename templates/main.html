@@ -6,85 +6,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-
- 
     <title>银信泰金融</title>
-        <meta name='robots' content='noindex,follow' />
-
-
-<link rel="stylesheet" href="{{ static_url("subscriptions.css") }}">
-<link rel="stylesheet" href="{{ static_url("edd.min.css")}}">
-<link rel="stylesheet" href="{{ static_url("widgets.css")}}">
-<!-- <link rel='stylesheet' id='theme-css'  href='http://leantheme.co/wp-content/themes/lean/style.css?ver=2.0.0' type='text/css' media='all' /> -->
-<link rel="stylesheet" href="{{ static_url("style.css") }}">
-<script type="text/javascript" src="{{static_url('jquery.js')}}"></script>
-<!-- <script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script> -->
-<script type='text/javascript'>
-/* <![CDATA[ */
-var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","position_in_cart":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","ajax_loader":"http:\/\/leantheme.co\/wp-content\/plugins\/easy-digital-downloads\/assets\/images\/loading.gif","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"0","checkout_page":"http:\/\/leantheme.co\/checkout\/","permalinks":"1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="{{static_url("theme.js")}}"></script>
+    <meta name='robots' content='noindex,follow' />
+    <link rel="stylesheet" href="{{ static_url("subscriptions.css") }}">
+    <link rel="stylesheet" href="{{ static_url("edd.min.css")}}">
+    <link rel="stylesheet" href="{{ static_url("widgets.css")}}">
+    <!-- <link rel='stylesheet' id='theme-css'  href='http://leantheme.co/wp-content/themes/lean/style.css?ver=2.0.0' type='text/css' media='all' /> -->
+    <link rel="stylesheet" href="{{ static_url("style.css") }}">
+    <script type="text/javascript" src="{{static_url('jquery.js')}}"></script>
+    <!-- <script type='text/javascript' src='http://leantheme.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script> -->
+    <script type='text/javascript'>
+    /* <![CDATA[ */
+    var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","position_in_cart":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","ajax_loader":"http:\/\/leantheme.co\/wp-content\/plugins\/easy-digital-downloads\/assets\/images\/loading.gif","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"0","checkout_page":"http:\/\/leantheme.co\/checkout\/","permalinks":"1"};
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="{{static_url("theme.js")}}"></script>
 </head>
 <body class="home page page-id-1064 page-template page-template-template-carousel-php">
 
-<div  class = 'woody_header' style=" padding-top: 15px;
-  padding-bottom: 15px;">
-
-<span  style="
-  margin-left: 5%;
-  font-size: 40px;
-  margin-top: 15px;
-  color: #373E55;"> 银信泰金融服务有限公司 </span> 
-  <div style="float:right;width:250px;">
-<span style="font-size: 14px; font-family: Microsoft YaHei;  float:left;margin-top: 20px;color:#373E55;">服务热线：
- 400-8699-906</span>
- <div style="width:50px;height:50px;float:right;margin-top: 5px;"> <img src="{{static_url("wx.png")}} "  style="width:50px;"></div>
- </div>
-  </div>
-   <div style="display:none">
-    </div>
-
-
+<div  class = 'woody_header' style="height:60px;width:970px;margin:0 auto;">
+        <span  class="pull-left logo"> 银信泰金融服务有限公司 </span> 
+        <span style="font-size: 12px; font-family: Microsoft YaHei;margin-top: 25px;color:#666;margin-left:10px" class="pull-left">服务热线：400-8699-906</span>
+        <div style="width:50px;height:50px;margin-top: 8px;margin-left:10px" class="pull-left">
+            <img src="{{static_url("wx.png")}} "  style="width:36px;margin-top:5px">
+        </div>
+            <ul id="menu-top-menu" class="nav navbar-nav menu pull-right">
+                 <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active">
+                    <a href="{{reverse_url('index')}}" title="Home"  >首页</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="{{reverse_url('us')}}" title="Demo"  >关于我们</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                    <a href="{{reverse_url('first')}}"  >产品与解决方案</a>
+                </li>
+                <li class=" menu-item menu-item-type-custom menu-item-object-custom">
+                     <a href=" {{reverse_url('apply')}} " title="Documentation"  >在线申请</a>
+                </li>
+            </ul>   
 </div>
-
-
-
-    <nav class="menu-above-header menu-navigation navbar-static-top navbar navbar-default navbar-inverse" role="navigation">
-        <div class="container">
-          
-
-            <div class="collapse navbar-collapse menu-above">
-                <div class="menu-header-container">
-                    <ul id="menu-top-menu" class="nav navbar-nav menu">
-                         <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home">
-                            <a href="{{reverse_url('index')}}" title="Home"  >首页</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="{{reverse_url('us')}}" title="Demo"  >关于我们</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                            <a href="{{reverse_url('first')}}"  >产品与解决方案</a>
-                        </li>
-                        <li class=" menu-item menu-item-type-custom menu-item-object-custom">
-                             <a href=" {{reverse_url('apply')}} " title="Documentation"  >在线申请</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="hidden-xs">
-                    <ul class="nav navbar-nav navbar-right nav-pills clearfix">
-                        <li>
-                        </li>
-                   
-                    </ul>                                    
-                </div>
-
-            </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-        </div><!-- ./navbar-inner -->
-    </nav> <!-- /#menu-under-header -->
-
+    
 
 
     <div id="image-slider" class="carousel slide">
@@ -189,20 +150,20 @@ var edd_scripts = {"ajaxurl":"http:\/\/leantheme.co\/wp-admin\/admin-ajax.php","
    <div style="height:50px;"></div>
 
  <div style="  width:100%;
-    height:80px; padding: 24px 0;color: #f1f1f1;text-align: center;background-color: #b8b9b9;font-size: 14px;" >
+    height:80px; padding: 24px 0;color: #fff;text-align: center;background-color: #b8b9b9;font-size: 14px;" >
         <ul class = "links"  style="">
              <li class = "links_item"  style=" display: inline-block;
   vertical-align: middle;
   padding: 0 1em;
   line-height: 1em;
-  border-left: 1px solid #d9dadc;
+  width:100%;
   ">
   银信泰金融服务有限公司 </li>
              <li class="links_item" style="display: inline-block;
   vertical-align: middle;
   padding: 0 1em;
   line-height: 1em;
-  border-left: 1px solid #d9dadc;
+width:100%;
              ">
              Copyright © 2014-2015  All Rights Reserved.</li>
         </ul>
