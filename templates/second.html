@@ -34,11 +34,32 @@
 <body class="home page page-id-1064 page-template page-template-template-carousel-php">
 
 
-<div   style="height:60px;width:970px;margin:0 auto;">
+<script type="text/javascript">
+     function show (obj)
+    {
+        var img = document.getElementById ("showing");
+        if (img.src = obj.src)
+        {
+            img.src = " {{static_url('qrcode_yinxin.jpg')}}";
+        }
+        img.style.display = "";
+        img.style.position = "absolute";
+        img.style.left = obj.offsetleft + obj.width;
+    }
+    function hide ()
+    {
+        document.getElementById ("showing").style.display = "none";
+    }
+</script>
+
+  
+<div style="height:60px;width:970px;margin:0 auto;">
         <span  class="pull-left logo"> 武汉银信泰金融服务有限公司 </span> 
         <span style="font-size: 12px; font-family: Microsoft YaHei;margin-top: 25px;color:#666;margin-left:10px" class="pull-left">服务热线：400-8699-906</span>
         <div style="width:50px;height:50px;margin-top: 8px;margin-left:10px" class="pull-left">
-            <img src="{{static_url("wx.png")}} "  style="width:36px;margin-top:5px">
+            <img src="{{static_url("wx.png")}} " onmouseover="show(this)" onmouseout="hide()" style="width:36px;margin-top:5px">
+            <br/>
+            <img src="{{static_url('qrcode_yinxin.jpg')}}" id = "showing" style="display:none ;height:120px;" >
         </div>
             <ul id="menu-top-menu" class="nav navbar-nav menu pull-right">
                  <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home active">
