@@ -83,6 +83,19 @@
 
 
     <div id='content' class='main'>
+
+    <div class='span3 woody_left'>
+    <ul class="nav nav-tabs nav-stacked">
+  <li><a href="{{reverse_url('first')}}"  >咨询业务</a></li>
+  <li><a href="{{reverse_url('second')}}"  >代理业务</a></li>
+  <li><a href="{{reverse_url('third')}}"  >小额信贷</a></li>
+  <li><a href="{{reverse_url('zhuangxiu')}}">装修贷</a></li>
+</ul>   
+
+  </div>
+
+   <div id='content' class='woody_main'>
+    <div  style="width:100%;height:500px;" > <img src=" {{static_url('apply.jpg') }}"  style=" height:100%;width:100%; "  />  </div>
         
     <div class="woody_form_div">
          <form name='input' action='/apply' method='post' class = 'woody_form'> 
@@ -124,6 +137,7 @@
         </form>
         </div>
   </div>
+  </div>
 <script type="text/javascript">
     function setvalue(x){
         var obj = document.getElementById(x);
@@ -145,7 +159,7 @@
     }
 }
 </script>
- <div style="display:none">
+ <div style="clear:both;">
     </div>
     <!--  <div class="foot" id = "footer" >
         <ul class = "links">
