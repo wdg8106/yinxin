@@ -68,11 +68,16 @@ class ApplyHandler(tornado.web.RequestHandler):
         return string
 
 
+class EmployFirstHandler(tornado.web.RequestHandler):
+    def get(self):
+        return self.render('first_employ.html')
 
-
-        
-
-
+class EmploySecondHandler(tornado.web.RequestHandler):
+    def get(self):
+        return self.render('second_employ.html')
+class EmployThirdHandler(tornado.web.RequestHandler):
+    def get(self):
+        return self.render('third_employ.html')
  
 class MungedPageHandler(tornado.web.RequestHandler):
     def map_by_first_letter(self, text):
@@ -104,6 +109,9 @@ if __name__ == '__main__':
             (r'/cantact',CantactHandler,{},'cantact'),
             (r'/us',UsHandler,{},'us'),
             (r'/apply',ApplyHandler,{},'apply'),
+            (r'/employ',EmployFirstHandler,{},'employ'),
+            (r'/secondemploy',EmploySecondHandler,{},'secondemploy'),
+            (r'/thirdemploy',EmployThirdHandler,{},'thirdemploy'),
             ],
         template_path=os.path.join(os.path.dirname(__file__), "templates"),
         static_path=os.path.join(os.path.dirname(__file__), "static"),
